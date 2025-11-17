@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 50px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.hotel-logo {
+    width: 100px; 
+    height: auto; 
+    border-radius: 4px;
+}
+
+/* NAVIGASI (Menu) */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    /* Beri jarak antar item menu */
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333; /* Warna teks gelap */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Efek hover*/
+.main-nav ul li a:hover {
+    color: #007bff; /* Warna sekunder saat hover */
+}
+
+/* TOMBOL LOGIN (Jika ada tombol khusus) */
+.btn-login {
+    background-color: #ff6600;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-footer {
+    /* Warna latar belakang gelap untuk kontras, tapi lebih soft dari admin */
+    background-color: #333; 
+    color: #f8f8f8; /* Teks putih lembut */
+    padding: 30px 50px;
+    font-size: 0.9em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px; /* Beri jarak yang cukup dari konten Section di atasnya */
+}
+
+/* Konten Footer (Copyright & Social Links) */
+.main-footer .footer-content {
+    display: flex;
+    justify-content: space-between; /* Pisahkan Copyright dan Social Links */
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555; /* Garis pemisah abu-abu gelap */
+}
+
+.hero-section{
+    display: flex;
+    padding: 0; /* Hapus padding agar elemen memenuhi */
+    min-height: 500px;
+    margin-bottom: 50px;
+}
+
+.hero-content {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0;
+}
+
+/* Kotak Teks yang diarsir (dengan background) */
+.hero-text-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Warna background sesuai sketsa (misal: hitam transparan) */
+    color: white;
+    padding: 40px;
+    text-align: left;
+    /* max-width: 400px; */
+    border-radius: 8px; /* Sudut sedikit melengkung */
+    margin-left: 100px;
+}
+
+.hero-text-box h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    color: white; /* Pastikan teks putih */
+}
+
+.hero-text-box .subtitle-1 {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.hero-photo {
+    flex: 2; /* Kolom foto lebih lebar dari kolom teks */
+    overflow: hidden;
+}
+
+.hero-photo img {
+    width: 500px;   
+    height: 500px;
+    object-fit: cover; /* Pastikan gambar mengisi kotak */
+    padding-left: 400px;
+}
+
+/* 2. Styling Section Keunggulan/About (Gambar Kiri, Teks Kanan) */
+.excellence-section {
+    background-color: #ffffff;
+}
+
+.excellence-grid {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start; /* Konten dimulai dari atas */
+    text-align: left;
+    margin-top: 40px;
+}
+
+.excellence-image {
+    flex: 1; /* Kolom gambar */
+}
+
+.excellence-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.excellence-description {
+    flex: 2; /* Kolom deskripsi lebih lebar */
+    padding-left: 20px;
+}
+
+.excellence-description h3 {
+    color: #007bff; /* Warna judul deskripsi */
+    margin-top: 0;
+    font-size: 1.6em;
+}
+
+.excellence-description p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* FILE: style.css (Media Query) */
+
+@media (max-width: 900px) {
+    /* Hero Section berubah menjadi susunan vertikal */
+    .hero-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .hero-text-box {
+        max-width: 100%; /* Lebar penuh */
+        text-align: center;
+    }
+
+    /* Section Keunggulan berubah menjadi susunan vertikal */
+    .excellence-grid {
+        flex-direction: column;
+    }
+
+    .excellence-description {
+        padding-left: 0;
+    }
+}

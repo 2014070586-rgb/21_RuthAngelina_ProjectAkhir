@@ -1,0 +1,209 @@
+.body1{
+    background-image:  url('background.jpg');
+    background-size: cover;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    background-color: whitesmoke;
+    padding: 30px;
+    margin-right: 400px;
+    margin-left: 400px;
+    border-radius: 10px;
+
+}
+
+.container1 h1{
+    margin-bottom: 50px;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.container1 form{
+    color: rgb(4, 70, 92);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body2{
+    background-color: rgb(240, 193, 159);
+    margin: 0;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container2{
+    max-width: 90%; /* Lebar maksimum yang nyaman */
+    margin: 0 auto; /* Menengahkan container di dalam padding-top 80px body */
+    padding: 30px;
+    background-color: #ffffff; /* Latar belakang putih */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2 h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.container2 table{
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan border ganda antar sel */
+    margin-top: 20px;
+    font-size: 0.95em;
+}
+
+.container2 th, .container2 td {
+    padding: 12px 15px; 
+    text-align: left;
+    border: 3px solid #ddd; /* Border tipis abu-abu */
+}
+
+.container2 th {
+    background-color: #007bff; /* Warna biru profesional */
+    color: white;
+    font-weight: bold;
+}
+
+/* Warna Selang-seling (Zebra Stripes) */
+.container2 tr:nth-child(even) {
+    background-color: #f8f8f8; /* Baris genap abu-abu sangat muda */
+}
+
+/* Tombol Opsi (Edit/Hapus) */
+.container2 td a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.container2 td a[href^='update'] { 
+    color: #28a745; /* Hijau untuk Edit */
+}
+
+.container2 td a[href^='hapus'] { 
+    color: #dc3545; /* Merah untuk Hapus */
+}
+
+/* Styling Tombol Tambah Data */
+.btn-tambah-data { 
+    display: inline-block; 
+    background-color: #28aa46; /* Hijau */
+    color: white; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.admin-navbar {
+    position: fixed;    
+    top: 0;          
+    left: 0;         
+    width: 95%;
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 50px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.admin-navbar .logo a {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.admin-navbar .nav-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.admin-navbar .nav-links a:hover {
+    background-color: #495057;
+}
+
+.admin-navbar .btn-logout {
+    background-color: #f6cf64; 
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.main-footer {
+    /* Menggunakan warna gelap yang serasi dengan Navbar Admin */
+    background-color: #343a40; 
+    color: #f8f9fa; /* Teks putih atau abu-abu muda */
+    padding: 20px 50px;
+    font-size: 0.9em;
+    width: 100%;
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+    margin-top: 40px; /* Jarak dari konten di atasnya */
+}
+
+/* Mengatur Konten Utama Footer (Copyright dan Social Links) */
+.main-footer .footer-content {
+    display: flex;
+    justify-content: space-between; /* Pisahkan Copyright (kiri) dan Social Links (kanan) */
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #495057; /* Garis pemisah tipis */
+}
+/* FILE: style2.css (Lanjutan) */
+
+/* Tautan Sosial Media */
+.main-footer .social-links a {
+    color: #adb5bd; /* Warna abu-abu yang soft */
+    text-decoration: none;
+    transition: color 0.3s;
+    margin: 0 5px;
+}
+
+.main-footer .social-links a:hover {
+    color: #ffffff; /* Berubah menjadi putih saat hover */
+}
+
+/* Informasi Alamat */
+.main-footer .footer-address {
+    text-align: center; /* Alamat di tengah */
+    color: #adb5bd;
+}
+
+.main-footer .footer-address p {
+    margin: 0;
+}
+/*Sticky Footer Fix*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container2, .container3 {
+    /* Memastikan container ini mengambil sisa ruang yang tersedia */
+    flex-grow: 1; 
+    /* ... styling container lainnya ... */
+}
